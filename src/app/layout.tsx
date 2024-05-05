@@ -1,29 +1,23 @@
 import { type Metadata } from 'next'
-import { DM_Sans, Inter } from 'next/font/google'
-import clsx from 'clsx'
+
+import { Providers } from '@/app/providers'
+import { Layout } from '@/components/Layout'
 
 import '@/styles/tailwind.css'
 
-const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-inter',
-})
-
-const dmSans = DM_Sans({
-  subsets: ['latin'],
-  weight: ['400', '500', '700'],
-  display: 'swap',
-  variable: '--font-dm-sans',
-})
-
 export const metadata: Metadata = {
   title: {
-    template: '%s - DeceptiConf',
-    default: 'DeceptiConf - A community-driven design conference',
+    template: '%s - Spencer Sharp',
+    default:
+      'Spencer Sharp - Software designer, founder, and amateur astronaut',
   },
   description:
-    'At DeceptiConf you’ll learn about the latest dark patterns being developed to trick even the smartest visitors, and you’ll learn how to deploy them without ever being detected.',
+    'I’m Spencer, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms.',
+  alternates: {
+    types: {
+      'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
+    },
+  },
 }
 
 export default function RootLayout({
@@ -32,16 +26,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html
-      lang="en"
-      className={clsx(
-        'h-full bg-white antialiased',
-        inter.variable,
-        dmSans.variable,
-      )}
-    >
-      <body className="flex min-h-full">
-        <div className="flex w-full flex-col">{children}</div>
+    <html lang="en" className="h-full antialiased" suppressHydrationWarning>
+      <body className="flex h-full bg-zinc-50 dark:bg-black">
+        <Providers>
+          <div className="flex w-full">
+            <Layout>{children}</Layout>
+          </div>
+        </Providers>
       </body>
     </html>
   )
