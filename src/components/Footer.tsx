@@ -29,12 +29,12 @@ export function Footer() {
               <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200">
                 <NavLink href="/">首頁</NavLink>
                 <NavLink href="/about">關於我們</NavLink>
-                <NavLink href="/projects">宣教活動</NavLink>
+                <NavLink href="/articles">宣教活動</NavLink>
                 <NavLink href="/#contact-us">聯絡我們</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
                 &copy; {new Date().getFullYear()} Mission Resource Centre | MRC
-                宣教資源會議. All rights reserved.
+                宣教資源中心. All rights reserved.
               </p>
             </div>
           </ContainerInner>

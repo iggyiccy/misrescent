@@ -127,16 +127,15 @@ function MobileNavigation(
                 <CloseIcon className="h-6 w-6 text-zinc-500 dark:text-zinc-400" />
               </Popover.Button>
               <h2 className="text-sm font-medium text-zinc-600 dark:text-zinc-400">
-                Navigation
+                MRC 宣教資源中心
               </h2>
             </div>
             <nav className="mt-6">
               <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
-                <MobileNavItem href="/about">About</MobileNavItem>
-                <MobileNavItem href="/articles">Articles</MobileNavItem>
-                <MobileNavItem href="/projects">Projects</MobileNavItem>
-                <MobileNavItem href="/speaking">Speaking</MobileNavItem>
-                <MobileNavItem href="/uses">Uses</MobileNavItem>
+                <MobileNavItem href="/">首頁</MobileNavItem>
+                <MobileNavItem href="/about">關於我們</MobileNavItem>
+                <MobileNavItem href="/articles">宣教活動</MobileNavItem>
+                <MobileNavItem href="/#contact-us">聯絡我們</MobileNavItem>
               </ul>
             </nav>
           </Popover.Panel>
@@ -181,7 +180,7 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
       <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
         <NavItem href="/">首頁</NavItem>
         <NavItem href="/about">關於我們</NavItem>
-        <NavItem href="/projects">宣教活動</NavItem>
+        <NavItem href="/articles">宣教活動</NavItem>
         <NavItem href="/#contact-us">聯絡我們</NavItem>
       </ul>
     </nav>

@@ -10,7 +10,7 @@ export async function GET(req: Request) {
   }
 
   let author = {
-    name: 'Mission Resource Centre | MRC 宣教資源會議',
+    name: 'Mission Resource Centre | MRC 宣教資源中心',
     email: 'info@misrescent.org',
   }
 

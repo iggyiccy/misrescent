@@ -246,9 +246,15 @@ function Photos() {
   return (
     <div className="mt-16 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
+        {[
+          'https://images.unsplash.com/photo-1528825539566-2bcb5882445c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+          'https://plus.unsplash.com/premium_photo-1664006989064-c43dbf32d461?q=80&w=2873&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+          'https://images.unsplash.com/photo-1612415491873-144fd5e03169?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+          'https://plus.unsplash.com/premium_photo-1678233300988-5356a6748189?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+          'https://images.unsplash.com/photo-1594142117505-c70dcd31087c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        ].map((image, imageIndex) => (
           <div
-            key={image.src}
+            key={image}
             className={clsx(
               'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800',
               rotations[imageIndex % rotations.length],
@@ -256,6 +262,8 @@ function Photos() {
           >
             <Image
               src={image}
+              width={2940}
+              height={3920}
               alt=""
               sizes="(min-width: 640px) 18rem, 11rem"
               className="absolute inset-0 h-full w-full object-cover"
@@ -272,59 +280,45 @@ export default async function Home() {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center space-y-8 pt-16 ">
-        <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-          Mission Resource Centre | MRC 宣教資源會議
-        </h1>
-        <Image src={poster} alt="poster" className="w-[560px]" />
-        <YouTubePlayer videoId="_wPvst8BYNA" />
-      </div>
-
-      {/* <Container className="mt-9">
-        <div className="max-w-2xl">
+      <Container className="mt-9">
+        <div className="max-w-xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Software designer, founder, and amateur astronaut.
+            Mission Resource Centre | MRC 宣教資源中心
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Spencer, a software designer and entrepreneur based in New York
-            City. I’m the founder and CEO of Planetaria, where we develop
-            technologies that empower regular people to explore space on their
-            own terms.
+            近年來，維省華人教會不斷增長，其中有不少的中小型教會願意推廣宣教事工，但縱使她們有一顆熱切的心，由於資源的限制，宣教對她們來說是一個很大的障礙。但是，如果眾教會能一起工作，便可以更容易結合資源和努力來實現大使命。
           </p>
-          <div className="mt-6 flex gap-6">
-            <SocialLink href="#" aria-label="Follow on X" icon={XIcon} />
-            <SocialLink
-              href="#"
-              aria-label="Follow on Instagram"
-              icon={InstagramIcon}
-            />
-            <SocialLink
-              href="#"
-              aria-label="Follow on GitHub"
-              icon={GitHubIcon}
-            />
-            <SocialLink
-              href="#"
-              aria-label="Follow on LinkedIn"
-              icon={LinkedInIcon}
-            />
-          </div>
         </div>
       </Container>
       <Photos />
-      <Container className="mt-24 md:mt-28">
+      <Container className="mt-24 md:mt-28" id="contact-us">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-          <div className="flex flex-col gap-16">
-            {articles.map((article) => (
-              <Article key={article.slug} article={article} />
-            ))}
+          <div className="flex">
+            <Image src={poster} alt="poster" className="w-[560px]" />
           </div>
-          <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Newsletter />
-            <Resume />
+          <div className="space-y-10 lg:pl-16">
+            <div className="py-0 sm:py-16">
+              <h2 className="text-2xl font-semibold text-zinc-800 dark:text-zinc-100">
+                Contact Us
+              </h2>
+              <p className="mt-2 text-base text-zinc-600 dark:text-zinc-400">
+                If you have any questions or would like to get in touch, please
+                don't hesitate to reach out.
+              </p>
+              <div className="my-6 space-y-4">
+                <Button
+                  href="mailto:info@misrescent.org"
+                  className="flex items-center justify-center"
+                >
+                  <MailIcon className="h-6 w-6 flex-none" />
+                  Email Us
+                </Button>
+              </div>
+              <YouTubePlayer videoId="_wPvst8BYNA" />
+            </div>
           </div>
         </div>
-      </Container> */}
+      </Container>
     </>
   )
 }
