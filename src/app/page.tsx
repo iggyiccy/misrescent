@@ -302,8 +302,8 @@ export default async function Home() {
                 Contact Us
               </h2>
               <p className="mt-2 text-base text-zinc-600 dark:text-zinc-400">
-                If you have any questions or would like to get in touch, please
-                don't hesitate to reach out.
+                {`If you have any questions or would like to get in touch, please
+                don't hesitate to reach out.`}
               </p>
               <div className="my-6 space-y-4">
                 <Button
