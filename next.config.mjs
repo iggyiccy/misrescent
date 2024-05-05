@@ -5,11 +5,11 @@ import remarkGfm from 'remark-gfm'
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
-  basePath: '/misrescent',
-  output: 'export',
-  images: {
-    unoptimized: true,
-  },
+  // basePath: '/misrescent',
+  // output: 'export',
+  // images: {
+  //   unoptimized: true,
+  // },
 }
 
 const withMDX = nextMDX({
@@ -21,4 +21,3 @@ const withMDX = nextMDX({
 })
 
 export default withMDX(nextConfig)
-
