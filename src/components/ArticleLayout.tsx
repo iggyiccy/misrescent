@@ -8,6 +8,7 @@ import { Container } from '@/components/Container'
 import { Prose } from '@/components/Prose'
 import { type ArticleWithSlug } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
+import RegistrationForm from './RegistrationForm'
 
 function ArrowLeftIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -62,6 +63,11 @@ export function ArticleLayout({
             <Prose className="mt-8" data-mdx-content>
               {children}
             </Prose>
+            <h2 className="my-12 text-2xl font-bold tracking-tight text-zinc-800 sm:text-3xl dark:text-zinc-100">
+              {article.title} 登記表格
+            </h2>
+
+            <RegistrationForm eventName={article.title} />
           </article>
         </div>
       </div>

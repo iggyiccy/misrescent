@@ -24,6 +24,7 @@ import poster from '@/images/poster.webp'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 import YouTubePlayer from '@/components/YouTube'
+import ContactForm from '@/components/ContactForm'
 
 function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -299,20 +300,23 @@ export default async function Home() {
           <div className="space-y-10 lg:pl-16">
             <div className="py-0 sm:py-16">
               <h2 className="text-2xl font-semibold text-zinc-800 dark:text-zinc-100">
-                Contact Us
+                聯絡我們 Contact Us
               </h2>
               <p className="mt-2 text-base text-zinc-600 dark:text-zinc-400">
-                {`If you have any questions or would like to get in touch, please
-                don't hesitate to reach out.`}
+                {`如果您有任何疑問或想要聯繫，請隨時與我們聯繫。`}
+              </p>
+              <p className="mt-2 text-base text-zinc-600 dark:text-zinc-400">
+                {`If you have any questions or would like to get in touch, please don't hesitate to reach out.`}
               </p>
               <div className="my-6 space-y-4">
-                <Button
+                {/* <Button
                   href="mailto:info@misrescent.org"
                   className="flex items-center justify-center"
                 >
                   <MailIcon className="h-6 w-6 flex-none" />
-                  Email Us
-                </Button>
+                  給我們發電子郵件 Email Us
+                </Button> */}
+                <ContactForm />
               </div>
               <YouTubePlayer videoId="_wPvst8BYNA" />
             </div>

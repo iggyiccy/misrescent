@@ -21,7 +21,7 @@ function Article({ article }: { article: ArticleWithSlug }) {
           {formatDate(article.date)}
         </Card.Eyebrow>
         <Card.Description>{article.description}</Card.Description>
-        <Card.Cta>Read article</Card.Cta>
+        <Card.Cta> 詳細資訊</Card.Cta>
       </Card>
       <Card.Eyebrow
         as="time"
@@ -35,9 +35,9 @@ function Article({ article }: { article: ArticleWithSlug }) {
 }
 
 export const metadata: Metadata = {
-  title: 'Articles',
+  title: '宣教活動',
   description:
-    'All of my long-form thoughts on programming, leadership, product design, and more, collected in chronological order.',
+    '我們每年提供一系列的宣教活動，當中包括宣教課程、 宣教工作坊等等。',
 }
 
 export default async function ArticlesIndex() {
