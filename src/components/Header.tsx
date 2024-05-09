@@ -246,8 +246,8 @@ function Avatar({
     >
       <Image
         src={avatarImage}
-        alt=""
-        sizes={large ? '4rem' : '2.25rem'}
+        alt="mrc-logo"
+        // sizes={large ? '4rem' : '2.25rem'}
         className={clsx(
           'bg-zinc-100 object-cover dark:bg-zinc-800',
           large ? 'h-16 w-full' : 'h-9 w-full',
