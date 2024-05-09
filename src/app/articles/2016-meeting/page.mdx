@@ -22,9 +22,21 @@ export default (props) => <ArticleLayout article={article} {...props} />
 MST,
 5 Burwood Highway, Wantirna
 
+<style jsx>{`
+  iframe {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  @media (max-width: 600px) {
+    iframe {
+      width: 100%;
+    }
+  }
+`}</style>
+
 <iframe
   src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=5%20Burwood%20Highway,%20Wantirna+(MST)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-  width="600"
   height="450"
   style={{ border: '0' }}
   allowfullscreen=""

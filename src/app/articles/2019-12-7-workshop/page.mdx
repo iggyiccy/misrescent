@@ -44,14 +44,28 @@ export default (props) => <ArticleLayout article={article} {...props} />
 宣信堂 CACV
 17 Livingstone Close, Burwood, VIC, 3125
 
+<style jsx>{`
+  iframe {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  @media (max-width: 600px) {
+    iframe {
+      width: 100%;
+    }
+  }
+`}</style>
+
 <iframe
   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.073013013073!2d145.116073315258!3d-37.853073079748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642f1b1b1b1b1%3A0x1f1f1f1f1f1f1f1f!2s17%20Livingstone%20Close%2C%20Burwood%20VIC%203125!5e0!3m2!1sen!2sau!4v1635363660004!5m2!1sen!2sau"
-  width="600"
   height="450"
   style={{ border: '0' }}
   allowfullscreen=""
   loading="lazy"
-></iframe>
+>
+  {' '}
+</iframe>
 
 ## 對象
 

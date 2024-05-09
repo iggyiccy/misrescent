@@ -22,9 +22,21 @@ export default (props) => <ArticleLayout article={article} {...props} />
 One Community Church,
 184 Surrey Road, Blackburn
 
+<style jsx>{`
+  iframe {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  @media (max-width: 600px) {
+    iframe {
+      width: 100%;
+    }
+  }
+`}</style>
+
 <iframe
   src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=184%20Surrey%20Road,%20Blackburn+(One%20Community%20Church)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-  width="600"
   height="450"
   style={{ border: '0' }}
   allowfullscreen=""
