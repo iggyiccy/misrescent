@@ -25,7 +25,6 @@ import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 import YouTubePlayer from '@/components/YouTube'
 import ContactForm from '@/components/ContactForm'
-import InteractiveImage from '@/components/Image'
 
 function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
