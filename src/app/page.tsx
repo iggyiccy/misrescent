@@ -25,6 +25,7 @@ import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 import YouTubePlayer from '@/components/YouTube'
 import ContactForm from '@/components/ContactForm'
+import InteractiveImage from '@/components/Image'
 
 function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -295,7 +296,9 @@ export default async function Home() {
       <Container className="mt-24 md:mt-28" id="contact-us">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex">
-            <Image src={poster} alt="poster" className="w-[560px]" />
+            <Link href="/articles/2024-prayers">
+              <Image src={poster} alt="poster" className="h-fit w-[560px]" />
+            </Link>
           </div>
           <div className="space-y-10 lg:pl-16">
             <div className="py-0 sm:py-16">
