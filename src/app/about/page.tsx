@@ -124,6 +124,47 @@ export default function About() {
       </div>
       <div className="flex flex-col items-center pt-16">
         <h1 className="text-center text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+          我們的背景
+        </h1>
+        <div className="mt-6 max-w-2xl space-y-7 px-2 text-base text-zinc-600 dark:text-zinc-400">
+          <div>
+            宣教資源中心是一所跨宗派，跨教會的獨立機構。
+            <br />
+            <br />
+            2012年，倪梁安弟兄在神面前領受異象，並得蒙信望愛堂的宣教委員會的差遣
+            ，為推動墨爾本華人基督徒宣教為宗旨而成立的機構。
+            <br />
+            更蒙墨爾本神學院及老師們的支持，于2012年7月在神學院内舉行異象分享會
+            。當中有來自不同教會的同工們加入，包括 Elise Chan, Lyon Chu, Eden
+            Law, Zoliner Kwok, Denny Leung等。
+            <br />
+            由於我們的語言和文化背景，經商議後便決定邀請Ps Patrick
+            Lok，另外組織以 英語為背景的團隊，成立Activate 。<br />
+            感謝神，在2013年4月，我們與Activate在神學院舉行了第一次的宣教資源大會
+            。
+          </div>
+          <div className="mt-8">
+            Mission Resources Centre (MRC) is a cross denomination, cross
+            churches, independent organization. <br />
+            <br />
+            Mission Resources Centre (MRC) is an organization, founded by Timmy
+            Ngai, received the vision from God, sent by CCCV mission committee
+            in 2012. <br />
+            The Vision and Mission of MRC is to mobilise Chinese Christian’s
+            mission in Melbourne. <br />
+            Receiving the support from Melbourne School of Theology (MST) and
+            teachers, a vision sharing meeting was held on July 2012 in MST.
+            From then, there are members join us from difference churches
+            including Elsie Chan, Lyon Chu, Eden Law, Zoliner Kwok, Denny Leung
+            etc. <br />
+            Due to our language and culture background, after discussion, we
+            invited Rev Patrick Lok to establish another team “ACTIVATE” which
+            background language is English. <br />
+            Praise the Lord!! In April 2013, the first Mission Resources
+            Conference was held in MST with ACTIVATE.
+          </div>
+        </div>
+        <h1 className="mt-8 text-center text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
           信仰宣言
         </h1>
         <div className="mt-6 max-w-2xl space-y-7 px-2 text-base text-zinc-600 dark:text-zinc-400">
