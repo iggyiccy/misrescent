@@ -33,7 +33,7 @@ export function Footer() {
                 <NavLink href="/#contact-us">聯絡我們</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                &copy; {new Date().getFullYear()} Mission Resource Centre | MRC
+                &copy; {new Date().getFullYear()} Mission Resources Centre | MRC
                 宣教資源中心. All rights reserved.
               </p>
               {/* socials icons: facebook, instagram, linkedin */}
