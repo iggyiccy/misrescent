@@ -25,6 +25,7 @@ import posterEnglish from '@/images/poster/heart-english.jpeg'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 import YouTubePlayer from '@/components/YouTube'
+import YouTubeHome from '@/components/YouTubeHome'
 import ContactForm from '@/components/ContactForm'
 
 function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
@@ -292,7 +293,13 @@ export default async function Home() {
           </p>
         </div>
       </Container>
+
       <Photos />
+
+      <Container className="mt-16 sm:mt-20">
+        <YouTubeHome videoId="K3L8s0VtBUw" />
+      </Container>
+
       <Container className="mt-24 md:mt-28" id="contact-us">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex">
