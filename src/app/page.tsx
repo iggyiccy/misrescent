@@ -20,7 +20,7 @@ import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
-import poster from '@/images/poster/heart-chinese.jpg'
+import poster from '@/images/poster/2026-life-is-a-mission.jpeg'
 import posterEnglish from '@/images/poster/heart-english.jpeg'
 import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
@@ -297,7 +297,7 @@ export default async function Home() {
       <Photos />
 
       <Container className="mt-16 sm:mt-20">
-        <YouTubeHome videoId="K3L8s0VtBUw" />
+        <YouTubeHome videoId="aoSZCTBy6E8" />
       </Container>
 
       <Container className="mt-24 md:mt-28" id="contact-us">
@@ -305,11 +305,11 @@ export default async function Home() {
           <div className="flex">
             <Link href="/articles/2025-heart">
               <Image src={poster} alt="poster" className="h-fit w-[560px]" />
-              <Image
+              {/* <Image
                 src={posterEnglish}
                 alt="poster"
                 className="h-fit w-[560px]"
-              />
+              /> */}
             </Link>
           </div>
           <div className="space-y-10 lg:pl-16">
