@@ -303,7 +303,7 @@ export default async function Home() {
       <Container className="mt-24 md:mt-28" id="contact-us">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex">
-            <Link href="/articles/2025-heart">
+            <Link href="/articles/2026-life-mission">
               <Image src={poster} alt="poster" className="h-fit w-[560px]" />
               {/* <Image
                 src={posterEnglish}
